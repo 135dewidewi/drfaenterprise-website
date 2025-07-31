@@ -1,3 +1,4 @@
+/* Font dan Warna */
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
@@ -11,6 +12,7 @@ body {
   margin: auto;
 }
 
+/* Header */
 .header {
   background-color: #F8F3EE;
   padding: 1rem 0;
@@ -30,6 +32,8 @@ body {
   gap: 1.5rem;
   padding: 0;
   margin: 0;
+  flex-wrap: wrap;
+  justify-content: flex-end;
 }
 
 .nav-links a {
@@ -38,11 +42,14 @@ body {
   font-weight: 500;
 }
 
+/* Hero Section */
 .hero {
-  background-color: #D6C6B9;
-  padding: 4rem 0;
+  background: url('https://www.transparenttextures.com/patterns/white-floral.png'), #D6C6B9;
+  background-repeat: repeat;
+  padding: 4rem 1rem;
   text-align: center;
   color: #fff;
+  background-size: contain;
 }
 
 .hero h1 {
@@ -67,8 +74,9 @@ body {
   margin-top: 1rem;
 }
 
+/* Sections */
 .section {
-  padding: 3rem 0;
+  padding: 3rem 1rem;
   text-align: center;
   background-color: #fff;
 }
@@ -94,14 +102,48 @@ h2 {
   border: 1px solid #E1D3C7;
 }
 
+/* Kontak */
 .contact a {
   color: #B58D7D;
   text-decoration: underline;
 }
 
+/* Footer */
 .footer {
-  background-color: #F2E9E2;
+  background: url('https://www.transparenttextures.com/patterns/white-floral.png'), #F2E9E2;
+  background-repeat: repeat;
+  background-size: contain;
   text-align: center;
-  padding: 1rem 0;
+  padding: 2rem 1rem;
   color: #7D6355;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .cta-button {
+    padding: 0.6rem 1.2rem;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  .service-list li {
+    font-size: 0.95rem;
+  }
 }
