@@ -1,9 +1,10 @@
-/* Font dan Warna */
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
   background-color: #F8F3EE;
   color: #4A4A4A;
+  background-image: url('https://www.transparenttextures.com/patterns/floral-wallpaper.png'); /* lembut */
+  background-repeat: repeat;
 }
 
 .container {
@@ -12,7 +13,6 @@ body {
   margin: auto;
 }
 
-/* Header */
 .header {
   background-color: #F8F3EE;
   padding: 1rem 0;
@@ -26,6 +26,10 @@ body {
   font-weight: bold;
 }
 
+nav {
+  margin-top: 1rem;
+}
+
 .nav-links {
   list-style: none;
   display: flex;
@@ -33,7 +37,6 @@ body {
   padding: 0;
   margin: 0;
   flex-wrap: wrap;
-  justify-content: flex-end;
 }
 
 .nav-links a {
@@ -42,14 +45,13 @@ body {
   font-weight: 500;
 }
 
-/* Hero Section */
 .hero {
-  background: url('https://www.transparenttextures.com/patterns/white-floral.png'), #D6C6B9;
-  background-repeat: repeat;
-  padding: 4rem 1rem;
+  background-color: #D6C6B9;
+  padding: 4rem 2rem;
   text-align: center;
   color: #fff;
-  background-size: contain;
+  background-image: url('https://www.transparenttextures.com/patterns/white-wall-3.png');
+  background-blend-mode: overlay;
 }
 
 .hero h1 {
@@ -72,13 +74,17 @@ body {
   font-weight: bold;
   display: inline-block;
   margin-top: 1rem;
+  transition: background 0.3s ease;
 }
 
-/* Sections */
+.cta-button:hover {
+  background-color: #9e7366;
+}
+
 .section {
-  padding: 3rem 1rem;
+  padding: 3rem 2rem;
   text-align: center;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 h2 {
@@ -102,48 +108,45 @@ h2 {
   border: 1px solid #E1D3C7;
 }
 
-/* Kontak */
 .contact a {
   color: #B58D7D;
   text-decoration: underline;
 }
 
-/* Footer */
 .footer {
-  background: url('https://www.transparenttextures.com/patterns/white-floral.png'), #F2E9E2;
-  background-repeat: repeat;
-  background-size: contain;
+  background-color: #F2E9E2;
   text-align: center;
-  padding: 2rem 1rem;
+  padding: 1rem 0;
   color: #7D6355;
 }
 
-/* Responsive */
+/* =====================
+   🌐 Responsiveness
+   ===================== */
 @media (max-width: 768px) {
   .nav-links {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     gap: 1rem;
-    margin-top: 1rem;
   }
 
   .hero h1 {
     font-size: 2rem;
   }
 
+  .hero p {
+    font-size: 1rem;
+  }
+
   .cta-button {
     padding: 0.6rem 1.2rem;
   }
 
-  .logo {
+  h2 {
     font-size: 1.5rem;
   }
 
-  h2 {
-    font-size: 1.6rem;
-  }
-
-  .service-list li {
-    font-size: 0.95rem;
+  .section {
+    padding: 2rem 1rem;
   }
 }
