@@ -6,11 +6,39 @@
   <title>DRFA Enterprise</title>
   <link rel="stylesheet" href="styles.css"/>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins&display=swap" rel="stylesheet">
+  <style>
+    .flower {
+      position: absolute;
+      width: 140px;
+      height: auto;
+      z-index: 0;
+      opacity: 0.7;
+      pointer-events: none;
+    }
+
+    .flower-left {
+      top: 20px;
+      left: 20px;
+    }
+
+    .flower-right {
+      bottom: 20px;
+      right: 20px;
+      transform: scaleX(-1);
+    }
+
+    @media (max-width: 768px) {
+      .flower {
+        width: 100px;
+      }
+    }
+  </style>
 </head>
 <body>
 
-  <!-- 🌸 Aksen Bunga Kiri Atas -->
-<img src="https://cdn-icons-png.flaticon.com/512/809/809957.png" alt="" class="flower flower-left">
+  <!-- 🌸 Aksen Bunga Putih Elegan -->
+  <img src="flower-accent.png" alt="bunga putih kiri atas" class="flower flower-left">
+  <img src="flower-accent.png" alt="bunga putih kanan bawah" class="flower flower-right">
 
   <header class="header">
     <div class="container">
@@ -67,9 +95,5 @@
       <p>© 2025 DRFA Enterprise. Seluruh hak cipta dilindungi.</p>
     </div>
   </footer>
-
-  <!-- 🌸 Aksen Bunga Kanan Bawah -->
-<img src="https://cdn-icons-png.flaticon.com/512/809/809967.png" alt="" class="flower flower-right">
-
 </body>
 </html>
